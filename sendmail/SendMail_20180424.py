@@ -14,10 +14,10 @@ from email.mime.multipart import MIMEMultipart
 # 定义发邮件的各类基础参数,使用公司邮箱发信给QQ邮箱
 smtpserver = "smtp.cyberzone.cn"
 port = 25
-sender = "hanguolong@cyberzone.cn"
-pwd = "jing-21"
-receiver = "185983895@qq.com" #单人收件
-# receiver = ["185983895@qq.com","858198672@qq.com"] #多人收件
+sender = "hanguolong@xxx.cn"
+pwd = "xxx"
+receiver = "1888888@qq.com" #单人收件
+# receiver = ["188888@qq.com","888888@qq.com"] #多人收件
 
 # 带附件的写信模板
 msg = MIMEMultipart()
