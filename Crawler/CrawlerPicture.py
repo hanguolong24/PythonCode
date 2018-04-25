@@ -38,5 +38,3 @@ for img in items_img:
         title = item_img.attrs['title']
         print(url+title)
         save_image(url, title)
-
-# 创建的python文件名，不要跟导入的库名相同，否则报错
