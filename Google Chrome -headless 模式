@@ -1,8 +1,21 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-
-chrome_options = Options()
-chrome_options.add_argument('--headless')
-driver = webdriver.Chrome(chrome_options=chrome_options)
 
 # Google 针对 Chrome 浏览器新增加的一种模式，可以让你不打开UI界面的情况下使用 Chrome 浏览器，所以运行效果与 Chrome 保持完美一致
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+driver =webdriver.Chrome(chrome_options=chrome_options)
+from time import sleep
+
+
+# driver = webdriver.Chrome()
+driver.get("https://www.baidu.com")
+sleep(2)
+driver.find_element_by_xpath("//*[@id='kw']").send_keys("xixihaha")
+sleep(3)
+print(driver.title)
+sleep(3)
+driver.quit()
+
+# 此时的脚本是在后台执行的，可以通过title验证执行结果
