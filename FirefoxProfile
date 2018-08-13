@@ -1,0 +1,2 @@
+profile = webdriver.FirefoxProfile('C:\Users\hanguolong\AppData\Roaming\Mozilla\Firefox\Profiles\z7hyrpp3.default')
+driver = webdriver.Firefox(profile)
